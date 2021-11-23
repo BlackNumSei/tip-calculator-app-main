@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div-separar-metade{
+    width: 50%;
+}
+.bill{
+    font-family: Space Mono;
+}
+.dinheiro{
+    background: url(./images/icon-dollar.svg) no-repeat scroll 15px 15px;
+    text-align: end; 
+    border: 0 none;
+    padding-right: 1rem;  
+    color: #00474b;
+}
+.div-central{
+    font-family: Space Mono;
+}
+#div-central-color{
+    background-color: white;
+    width: 50rem;
+    border-radius: 15px;
+}
+.bg-success{
+    width: 3rem;
+    border-radius: 5px;
+}
+.bg-light{
+    height: 3rem;
+    width: 23rem;
+    border: 1 none;
+    margin-top: -1.5rem;
+}
+input:focus{
+    outline-color: #26c2ad;
+}
+.fs-4:focus{
+    background-color: #26c2ad;
+}
+.fs-4{
+    width: 7rem;
+    height: 2.6rem;
+    border: 0 none;
+    color: white;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    background-color: #00474b;
+}
+#calcular{
+    width: 18rem;
+    margin-left: 6rem;
+    height: 20rem;
+    text-align: start;
+    padding-left: 2rem;
+    padding-top: 3rem;
+    background-color: #00474b;
+    border-radius: 15px;
+    margin-right: 1rem;
+}
+.custom{
+    color: #00474b; 
+    border-radius: 5px; 
+    padding-right: 14px; 
+    text-align: end;
+}
+.total-person{
+    width: 40%; 
+    margin-top: 1.3rem;
+}
+.tipAmount{
+    width: 40%;
+}
+.clicked{
+    background-color: aquamarine;
+}
+.person{
+    font-size: 12px;
+    margin-top: -1rem;
+    color: #86b6ba;
+}
+.valor-total{
+    width: 9rem; 
+    height: 5rem; 
+    font-size: 35px; 
+    margin-top: -27px;
+    border: 0 none; 
+    color: #9fe8df; 
+    background-color: #00474b; 
+    outline: none;
+    width: 9rem;
+    padding-left: 1rem;
+}
+.valor-pessoa{
+    width: 9rem; 
+    height: 5rem; 
+    font-size: 35px; 
+    margin-top: -27px; 
+    border: 0 none; 
+    color: #9fe8df; 
+    background-color: #00474b; 
+    outline: none;
+    padding-left: 1rem;
+}
+#porcentagem{
+    margin-top: -1rem;
+}
+.reset:focus{
+    background-color: #9fe8df !important;
+}
+.reset:hover{
+    background-color: #9fe8df !important;
+
+}
+.reset{
+    width: 100%; 
+    height: 2.3rem; 
+    font-weight: 600; 
+    border: 0 none; 
+    border-radius: 3px; 
+    background-color: #26c2ad;
+}
+.numeros-pessoas{
+    border: 0 none; 
+    padding-right: 1rem; 
+    border-radius: 5px; 
+    text-align: end;  
+    color: #00474b; 
+    background: url(./images/icon-person.svg) no-repeat scroll 15px 15px;
+    padding-left: 30px;
+}
+#valor-total::placeholder{
+    color: #23bfaa;
+} 
+#valor-pessoa::placeholder{
+    color: #23bfaa;
+}
+@media screen and (max-width:828px) {
+    #div-central-color{
+        display: block !important;
+        width: 20rem;
+        height: 41.8rem; 
+    }
+    .text-center{
+        padding-top: 2rem;
+        height: 60rem;
+    }
+    .bg-light{
+        width: 17rem;
+    }
+    #footer-metade{
+        width: auto !important;
+    }
+    #calcular{
+        margin-left: 0;
+        margin-top: -2rem;
+        width: 20rem;
+        height: 17.3rem;
+    }
+    .valor-total{
+        height: 4.5rem;
+    }
+    .valor-total{
+        height: 4rem;
+    }
+    .reset{
+        margin-top: -2rem;
+    }
+    .div-separar-metade{
+        width: auto !important;
+    }
+    .fs-4{
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+    .pb-5{
+        padding-bottom: 1rem !important;
+    }
+    .pb-3{
+        margin-top: 3rem;
+    }
+    #valor-pessoa{
+        margin-top: -16px;
+    }
+    .custom{
+        width: 7rem;
+    }
+    #error{
+        margin-left: 1rem!important;
+        font-size: 14px !important;
+    }
+}
